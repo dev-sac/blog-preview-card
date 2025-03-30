@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Figtree ExtraBold';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Figtree Medium';
+    src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%)
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container{
+    width: 384px;
+    padding: 24px;
+    min-width: 327px;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    border-radius: 15px;
+    box-shadow: 8px 8px var(--gray-950);
+}
+
+.card-container img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card-container .card-content{
+    margin: 24px 0;
+}
+
+.card-container .card-content .tag{
+    font-size: 14px;
+    font-family: 'Figtree ExtraBold' ;
+    padding:4px 12px;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    width: fit-content  ;
+}
+
+.card-container .card-content .publish-date{
+    font-size: 14px;
+    font-family: 'Figtree Medium' ;
+    margin: 12px 0px;
+}
+
+.card-container .card-content h1{
+    font-family: 'Figtree ExtraBold' ;
+    font-size: 24px;
+}
+
+.card-container .card-content h1:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
+.card-container .card-content p{
+    font-size: 16px;
+    font-family: 'Figtree Medium' ;
+    color: var(--gray-500);
+    margin-top: 12px;
+    text-align: left;
+}
+
+.card-container .publisher{
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    font-family: 'Figtree ExtraBold' ;
+    font-size: 24px;
+
+}
+
+.card-container .publisher img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 767px) {
+    .card-container {
+      width: 327px;
+    }
+}
+  
